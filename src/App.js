@@ -47,11 +47,11 @@ const createContact = (contact) =>{
     
     <div>
       <Switch>
-        <Route exact path="/">
+        <Route exact path = "/">
           <ListContacts  contacts={contacts} removeContact = {removeContact} />
         </Route>
         <Route path="/create">
-          {contactCreated ? <Redirect to="/" /> : <CreateContact  onCreateContact = {createContact}/>}
+          {contactCreated ? <Redirect to = "/" /> : <CreateContact  onCreateContact = {createContact}/>}
         </Route>
       </Switch>
     </div>
